@@ -1,1 +1,63 @@
+.header {
+    text-align: center;
+}
 
+.box {
+    border: 1px solid black;
+    position: relative;
+    width: 31%;
+    float: left;
+    margin-right: 3%;
+}
+
+.title {
+    position: absolute;
+    right: 0;
+}
+
+.box.one .title {
+    background: yellow;
+}
+
+.box.two .title {
+    background: greenyellow;
+}
+
+.box.three .title {
+    background: burlywood;
+}
+
+.box.three {
+    margin-right: 0;
+}
+
+.content {
+    padding-top: 20px;
+}
+
+@media (min-width: 992px) {
+    .header { background: red; }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .header { background: blue; }
+    .box {
+        width: 48%;
+    }
+    .box.two {
+        margin-right: 0;
+    }
+    .box.three {
+        clear: both;
+        width: 100%;
+        margin-top: 2%;
+    }
+}
+@media (max-width: 767px) {
+    .header { background: green; }
+    .box {
+        clear: both;
+        width: 100%;
+        margin-right: 0;
+        margin-top: 2%;
+    }
+}
